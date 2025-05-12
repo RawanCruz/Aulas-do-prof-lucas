@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicando as Portas na Rede</title>
+  <link rel="stylesheet" href="portas.css">
+</head>
+<body>
+  <header>
+    <h1>O que são as Portas na Rede?</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Entendendo com uma analogia</h2>
+      <p>Imagine que seu computador é como um prédio com vários apartamentos. Cada <strong>apartamento</strong> tem uma função específica — um para e-mail, outro para navegador, outro para jogos online. As <strong>portas</strong> são os números que identificam cada um desses apartamentos para que os dados cheguem no lugar certo.</p>
+    </section>
+
+    <section>
+      <h2>O que são Portas?</h2>
+      <p>Portas são números usados pelos protocolos para direcionar os dados para o aplicativo correto dentro do computador. Elas vão de 0 a 65535.</p>
+      <ul>
+        <li><strong>Portas bem conhecidas (0–1023):</strong> usadas por serviços populares como HTTP, HTTPS, FTP, etc.</li>
+        <li><strong>Portas registradas (1024–49151):</strong> usadas por aplicativos específicos de empresas.</li>
+        <li><strong>Portas dinâmicas ou privadas (49152–65535):</strong> usadas temporariamente por programas e sistemas operacionais.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplos de Portas Comuns</h2>
+      <table>
+        <tr>
+          <th>Porta</th>
+          <th>Serviço</th>
+          <th>Função</th>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>HTTP</td>
+          <td>Sites normais (sem criptografia)</td>
+        </tr>
+        <tr>
+          <td>443</td>
+          <td>HTTPS</td>
+          <td>Sites seguros (com criptografia)</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>SMTP</td>
+          <td>Envio de e-mails</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>FTP</td>
+          <td>Transferência de arquivos</td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>DNS</td>
+          <td>Tradução de endereços (nomes para IPs)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Atividade prática no computador</h2>
+      <ol>
+        <li>Abra o Prompt de Comando (cmd).</li>
+        <li>Digite: <code>netstat -an</code> e pressione Enter.</li>
+        <li>Observe as portas usadas nas conexões ativas.</li>
+        <li>Anote 3 portas abertas e pesquise para que servem.</li>
+      </ol>
+    </section>
+  </main>
+teste
+  <div class="button-nclass">
+    <a href="../5.quiz/quiz.html"><input type="button" value="Proxima pagina"></a>
+  </div>
+ 
+  <footer>
+    <p>&copy; 2025 - Aula de Redes</p>
+  </footer>
+</body>
+</html>

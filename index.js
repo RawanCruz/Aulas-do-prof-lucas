@@ -1,0 +1,1 @@
+window.location.href = "./Aula 6 de IP allnet/index.html";

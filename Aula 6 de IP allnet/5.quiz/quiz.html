@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz sobre Redes</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz sobre Redes</h1>
+    <p>Teste seus conhecimentos sobre redes de computadores.</p>
+  </header>
+
+  <main>
+    <form id="quiz-form">
+      
+      <!-- Múltipla Escolha -->
+      <section>
+        <h2>Perguntas de Múltipla Escolha</h2>
+
+        <p>1. O que significa LAN?</p>
+        <label><input type="radio" name="q1" value="B"> A) Large Area Network</label><br>
+        <label><input type="radio" name="q1" value="B"> B) Local Area Network</label><br>
+        <label><input type="radio" name="q1" value="C"> C) Light Access Network</label><br>
+        <label><input type="radio" name="q1" value="D"> D) Limited Area Node</label><br>
+
+        <p>2. Qual porta é usada para HTTPS?</p>
+        <label><input type="radio" name="q2" value="A"> A) 21</label><br>
+        <label><input type="radio" name="q2" value="B"> B) 80</label><br>
+        <label><input type="radio" name="q2" value="C"> C) 110</label><br>
+        <label><input type="radio" name="q2" value="D"> D) 443</label><br>
+
+        <p>3. Qual protocolo é usado para envio de e-mails?</p>
+        <label><input type="radio" name="q3" value="A"> A) SMTP</label><br>
+        <label><input type="radio" name="q3" value="B"> B) POP</label><br>
+        <label><input type="radio" name="q3" value="C"> C) FTP</label><br>
+        <label><input type="radio" name="q3" value="D"> D) IMAP</label><br>
+
+        <p>4. Qual desses é um endereço IP válido?</p>
+        <label><input type="radio" name="q4" value="A"> A) 192.168.1.1</label><br>
+        <label><input type="radio" name="q4" value="B"> B) 256.255.255.255</label><br>
+        <label><input type="radio" name="q4" value="C"> C) 300.12.56.78</label><br>
+        <label><input type="radio" name="q4" value="D"> D) 192.168.257.1</label><br>
+
+        <p>5. Qual protocolo é usado para acesso remoto a outro computador?</p>
+        <label><input type="radio" name="q5" value="A"> A) SNMP</label><br>
+        <label><input type="radio" name="q5" value="B"> B) HTTP</label><br>
+        <label><input type="radio" name="q5" value="C"> C) SSH</label><br>
+        <label><input type="radio" name="q5" value="D"> D) SMTP</label><br>
+      </section>
+
+      <!-- Checkbox -->
+      <section>
+        <h2>Perguntas de Múltiplas Respostas (Checkbox)</h2>
+
+        <p>6. Quais são exemplos de redes WAN?</p>
+        <label><input type="checkbox" name="q6" value="1"> Internet</label><br>
+        <label><input type="checkbox" name="q6" value="2"> Rede da sua casa</label><br>
+        <label><input type="checkbox" name="q6" value="3"> Rede entre países</label><br>
+        <label><input type="checkbox" name="q6" value="4"> Bluetooth</label><br>
+
+        <p>7. Quais dispositivos podem ser conectados a uma rede?</p>
+        <label><input type="checkbox" name="q7" value="1"> Celular</label><br>
+        <label><input type="checkbox" name="q7" value="2"> Geladeira inteligente</label><br>
+        <label><input type="checkbox" name="q7" value="3"> TV Smart</label><br>
+        <label><input type="checkbox" name="q7" value="4"> Micro-ondas analógico</label><br>
+
+        <p>8. Qual desses dispositivos não recebe endereço IP?</p>
+        <label><input type="checkbox" name="q8" value="1"> Computador</label><br>
+        <label><input type="checkbox" name="q8" value="2"> Impressora Wi-Fi</label><br>
+        <label><input type="checkbox" name="q8" value="3"> Switch</label><br>
+        <label><input type="checkbox" name="q8" value="4"> Roteador</label><br>
+
+        <p>9. Quais protocolos atuam na camada de transporte?</p>
+        <label><input type="checkbox" name="q9" value="1"> TCP</label><br>
+        <label><input type="checkbox" name="q9" value="2"> UDP</label><br>
+        <label><input type="checkbox" name="q9" value="3"> IP</label><br>
+        <label><input type="checkbox" name="q9" value="4"> HTTP</label><br>
+      </section>
+
+      <!-- Verdadeiro ou Falso -->
+      <section>
+        <h2>Verdadeiro ou Falso</h2>
+
+        <p>10. O IPv6 foi criado para resolver a limitação de endereços do IPv4.</p>
+        <label><input type="radio" name="q10" value="true"> Verdadeiro</label><br>
+        <label><input type="radio" name="q10" value="false"> Falso</label><br>
+
+        <p>11. A porta 25 é usada para transferência de arquivos.</p>
+        <label><input type="radio" name="q11" value="true"> Verdadeiro</label><br>
+        <label><input type="radio" name="q11" value="false"> Falso</label><br>
+
+        <p>12. Um firewall serve para controlar o tráfego de rede.</p>
+        <label><input type="radio" name="q12" value="true"> Verdadeiro</label><br>
+        <label><input type="radio" name="q12" value="false"> Falso</label><br>
+      </section>
+
+      <!-- Verdadeiro ou Falso com SELECT -->
+      <section>
+        <h2>Verdadeiro ou Falso (com roleta)</h2>
+
+        <p>13. O protocolo FTP é usado para transferir arquivos.</p>
+        <select name="q13">
+          <option value="">Selecione</option>
+          <option value="true">Verdadeiro</option>
+          <option value="false">Falso</option>
+        </select><br><br>
+
+        <p>14. A camada de aplicação é responsável pela comunicação entre os computadores e os usuários.</p>
+        <select name="q14">
+          <option value="">Selecione</option>
+          <option value="true">Verdadeiro</option>
+          <option value="false">Falso</option>
+        </select><br><br>
+
+        <p>15. O protocolo DNS converte nomes de domínio em endereços IP.</p>
+        <select name="q15">
+          <option value="">Selecione</option>
+          <option value="true">Verdadeiro</option>
+          <option value="false">Falso</option>
+        </select><br><br>
+      </section>
+      <p>16. O cabo de rede mais comum atualmente é o Cat 6.</p>
+<select name="q16">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>17. A velocidade de uma conexão Wi-Fi é sempre superior à de uma conexão via cabo.</p>
+<select name="q17">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>18. O endereço IP 127.0.0.1 é conhecido como "localhost".</p>
+<select name="q18">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>19. Todo dispositivo conectado a uma rede precisa obrigatoriamente de um endereço MAC.</p>
+<select name="q19">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>20. O navegador da internet se comunica diretamente com a camada física da rede.</p>
+<select name="q20">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>21. Roteadores domésticos geralmente incluem função de firewall.</p>
+<select name="q21">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>22. A tecnologia de fibra óptica usa pulsos de luz para transmitir dados.</p>
+<select name="q22">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>23. O protocolo ARP serve para descobrir o endereço MAC de um IP na rede local.</p>
+<select name="q23">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>24. A camada de enlace é responsável por criptografar os dados transmitidos.</p>
+<select name="q24">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+<p>25. O DNS é como uma "agenda de contatos" da internet.</p>
+<select name="q25">
+  <option value="">Selecione</option>
+  <option value="true">Verdadeiro</option>
+  <option value="false">Falso</option>
+</select><br><br>
+
+
+<input type="button" value="Verificar Respostas" onclick="verificarRespostas()" class="button-final">
+
+    </form>
+  </main>
+ <script src="quis.js"></script>
+<footer>
+    <p>&copy; 2025 - Quiz sobre Redes</p>
+  </footer>
+</body>
+</html>

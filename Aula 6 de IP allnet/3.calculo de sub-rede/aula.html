@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula de Redes - CIDR e Sub-redes</title>
+  <link rel="stylesheet" href="aula.css" />
+</head>
+<body>
+  <h1>Aula de Redes - Máscara de Sub-rede e CIDR</h1>
+
+  <h2>1. O que é Máscara de Sub-rede?</h2>
+  <p>Ela define qual parte do endereço IP pertence à rede e qual parte pertence ao host (computador, impressora, etc). Exemplo:</p>
+  <p class="code">IP: 192.168.1.10<br>Máscara: 255.255.255.0</p>
+
+  <h2>2. O que é CIDR?</h2>
+  <p>CIDR significa <strong>Classless Inter-Domain Routing</strong>. É uma forma abreviada de escrever a máscara de sub-rede. Exemplo:</p>
+  <p class="code">255.255.255.0 = /24</p>
+
+  <h3>Como calcular o número de hosts?</h3>
+  <p>Use a fórmula: <span class="code">2ⁿ - 2</span>, onde <span class="code">n</span> é o número de bits de host.</p>
+
+  <h2>3. Tabela de CIDR com Bits</h2>
+  <table>
+    <tr>
+      <th>CIDR</th>
+      <th>Máscara Decimal</th>
+      <th>Máscara Binária</th>
+      <th>Bits de Host</th>
+      <th>Hosts Válidos</th>
+    </tr>
+    <tr><td>/24</td><td>255.255.255.0</td><td class="binario">11111111.11111111.11111111.00000000</td><td>8</td><td>254</td></tr>
+    <tr><td>/25</td><td>255.255.255.128</td><td class="binario">11111111.11111111.11111111.10000000</td><td>7</td><td>126</td></tr>
+    <tr><td>/26</td><td>255.255.255.192</td><td class="binario">11111111.11111111.11111111.11000000</td><td>6</td><td>62</td></tr>
+    <tr><td>/27</td><td>255.255.255.224</td><td class="binario">11111111.11111111.11111111.11100000</td><td>5</td><td>30</td></tr>
+    <tr><td>/28</td><td>255.255.255.240</td><td class="binario">11111111.11111111.11111111.11110000</td><td>4</td><td>14</td></tr>
+    <tr><td>/29</td><td>255.255.255.248</td><td class="binario">11111111.11111111.11111111.11111000</td><td>3</td><td>6</td></tr>
+    <tr><td>/30</td><td>255.255.255.252</td><td class="binario">11111111.11111111.11111111.11111100</td><td>2</td><td>2</td></tr>
+    <tr><td>/31</td><td>255.255.255.254</td><td class="binario">11111111.11111111.11111111.11111110</td><td>1</td><td>0 (ponto-a-ponto)</td></tr>
+    <tr><td>/32</td><td>255.255.255.255</td><td class="binario">11111111.11111111.11111111.11111111</td><td>0</td><td>0 (IP único)</td></tr>
+  </table>
+
+  <h2>4. Sobre o /32</h2>
+  <p>O <strong>/32</strong> representa um único IP fixo. Ele não permite host, rede ou broadcast. Usado em:</p>
+  <ul>
+    <li>Loopback: <span class="code">127.0.0.1/32</span></li>
+    <li>Regras de firewall ou roteamento</li>
+  </ul>
+
+  <h2>5. Exercícios no computador</h2>
+  <div class="exercise">
+    <p><strong>Ex. 1:</strong> Calcule quantos hosts cabem na rede <span class="code">192.168.1.0/27</span>.</p>
+    <p><strong>Ex. 2:</strong> Qual a máscara em decimal equivalente ao CIDR <span class="code">/26</span>?</p>
+    <p><strong>Ex. 3:</strong> A rede <span class="code">10.0.0.0/30</span> pode ter quantos hosts? Quais são eles?</p>
+    <p><strong>Ex. 4:</strong> Escreva os 4 primeiros bits da máscara <span class="code">/28</span> em binário.</p>
+    <p><strong>Ex. 5:</strong> Um roteador tem IP <span class="code">172.16.5.10/32</span>. Ele está em uma rede ou é um IP isolado?</p>
+  </div>
+
+  <p><strong>Desafio bônus:</strong> Monte você uma rede com 3 sub-redes usando o bloco <span class="code">192.168.1.0/24</span>. Qual seria o CIDR ideal para cada uma se elas precisassem de 50, 30 e 10 hosts?</p>
+  <div class="button-nclass">
+    <a href="../4.portas/portas.html"><input type="button" name="prox" value="proxima pagina"></a>
+      </div> 
+</body>
+</html>
